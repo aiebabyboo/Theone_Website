@@ -4,14 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="css/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
 <body class="min-h-screen bg-gradient-to-b from-white to-gray-700 text-white">
-  <!-- Header (mirrors home page structure) -->
+   <div class="relative">
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1610897534349-7759782118b9?fm=jpg&q=60&w=2400&ixlib=rb-4.1.0'); background-attachment: fixed;"></div>
+    <div class="absolute inset-0 bg-black/50"></div>
+    <section class="relative mx-auto max-w-7xl px-6 md:px-16 pt-10 pb-4">
+      <p class="tracking-widest uppercase text-xs md:text-sm font-extrabold mb-2 text-white/70">Curated Collection</p>
+      <h1 class="text-3xl md:text-5xl font-light tracking-wide mb-2">Watches</h1>
+      <p class="text-sm md:text-base text-white/70">Fast shipping • 2‑year warranty • Free 30‑day returns</p>
+    </section>
+
+    <!-- Filter(non‑functional) -->
+    <section class="relative mx-auto max-w-7xl px-6 md:px-16 py-4 flex flex-wrap items-center gap-3">
+      <button class="px-3 py-1.5 rounded-full border border-white/15 bg-white/10 text-sm">All</button>
+      <button class="px-3 py-1.5 rounded-full border border-white/15 bg-white/5 hover:bg-white/10 text-sm">Automatic</button>
+      <button class="px-3 py-1.5 rounded-full border border-white/15 bg-white/5 hover:bg-white/10 text-sm">Dress</button>
+      <button class="px-3 py-1.5 rounded-full border border-white/15 bg-white/5 hover:bg-white/10 text-sm">Field</button>
+      <button class="px-3 py-1.5 rounded-full border border-white/15 bg-white/5 hover:bg-white/10 text-sm">Diver</button>
+      <div class="ml-auto"></div>
+      <label class="text-sm text-white/80 bg-black">Sort
+        <select class="ml-2 rounded-lg border border-white/15 bg-black px-2 py-1">
+          <option>Featured</option>
+          <option>Price: Low to High</option>
+          <option>Price: High to Low</option>
+          <option>Newest</option>
+          <option>Best Rated</option>
+        </select>
+      </label>
+    </section>
+
     <main class="main_list">
             <div class="grid">
                 <div class="card">
-                    <img src="images/2025-cvo-pan-america-m35lb-motorcycle.webp" alt="Harley Bike 1" />
+                    <img src="images/2025-cvo-pan-america-m35lb-motorcycle.webp" alt=" " />
                     <h2>watch 1</h2>
                     <p>Experience the power and legacy of watch built for freedom and performance.
                     </p>
