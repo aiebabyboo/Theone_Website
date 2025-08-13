@@ -1,11 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Théone - Luxury Watches</title>
+    <link rel="stylesheet" href="css/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    
+    <header>
+        <!-- Navigation header -->
+        <div>THÉONE</div>
+        <nav>
+            <a href="#">Watches</a>
+            <a href="#">Service</a>
+            <a href="#">Stores</a>
+        </nav>
+
+        <div>
+            <button>EUR</button>
+            <button>ENG</button>
+        </div>
+    </header>
+
+    <main class="px-8 md:px-20 py-16 bg-black text-white">
+        <!-- Product detail section -->
+        <section class="flex flex-col lg:flex-row gap-12 items-start">
+
+            <!-- Image slider -->
+            <div class="w-full lg:w-1/2">
+
+                <div class="relative w-full overflow-hidden rounded-lg shadow-lg">
+                    <div class="flex transition-transform duration-500 ease-in-out" style="transform: translateX(0);">
+                        <img src="images/front.png" alt="front side of the watch" class="w-full h-96 object-cover">
+                    </div>
+                </div>
+
+                <div class="flex mt-4 gap-4">
+                    <img src="images/front.png" alt="front side of the watch" class="w-20 h-20 object-cover rounded cursor-pointer border-2 border-white hover:opacity-70 transition"/>
+                    <img src="images/side.png" alt="side of the watch" class="w-20 h-20 object-cover rounded cursor-pointer border-2 border-white hover:opacity-70 transition"/>
+                    <img src="images/back.png" alt="back side of the watch"class="w-20 h-20 object-cover rounded cursor-pointer border-2 border-white hover:opacity-70 transition"/>
+                </div>
+
+            </div>
+
+            <!-- Product Info -->
+            <div class="w-full lg:w-1/2 space-y-6">
+                <h1 class="text-3xl md:text-4xl font-bold tracking-wide uppercase">Noir Edition</h1>
+                <p class="text-xl font-semibold text-gray-300">18,900 €</p>
+                <p class="text-gray-400 leading-relaxed">Noir Edition is a tribute to timeless design, infused with modern-day elegance. Crafted with a deep matte black finish, Swiss automatic movement, and sapphire crystal glass, it embodies sophistication and subtle power — a watch for those who lead in silence.</p>
+                <br>
+                <button class="mt-4 px-6 py-3 bg-white text-black font-semibold uppercase tracking-wide rounded hover:bg-gray-300 transition">Add to Cart 🛒</button>
+
+                <!-- Customer Reviews -->
+
+                <div>
+                    <h2>Customer Reviews</h2>
+
+                    <div>
+
+                        <div>
+                            <p>"Elegant and subtle. Perfect for business meetings and night outs. My boyfriend really loves it!"</p>
+                            <p>Vivi N.</p>
+                        </div>
+
+                        <div>
+                            <p>"The build quality is amazing. A real luxury piece."</p>
+                            <p>Vabz K.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <div>
+                <img>
+                <p>&copy; 2025 Théone | This is a group project</p>
+                <p>Group Members: Vivi, Jay, Vabz</p>
+            </div>
+
+            <div>
+                <a href="#">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
