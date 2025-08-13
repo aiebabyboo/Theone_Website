@@ -25,23 +25,23 @@
         </div>
     </header>
 
-    <main>
+    <main class="px-8 md:px-20 py-16 bg-black text-white">
         <!-- Product detail section -->
-        <section>
+        <section class="flex flex-col lg:flex-row gap-12 items-start">
 
             <!-- Image slider -->
-            <div>
+            <div class="w-full lg:w-1/2">
 
-                <div>
-                    <div>
-                        <img src="images/front.png" alt="front side of the watch">
+                <div class="relative w-full overflow-hidden rounded-lg shadow-lg">
+                    <div class="flex transition-transform duration-500 ease-in-out" style="transform: translateX(0);">
+                        <img src="images/front.png" alt="front side of the watch" class="w-full h-96 object-cover">
                     </div>
                 </div>
 
-                <div>
-                    <img src="images/front.png" alt="front side of the watch">
-                    <img src="images/side.png" alt="side of the watch">
-                    <img src="images/back.png" alt="back side of the watch">
+                <div class="flex mt-4 gap-4">
+                    <img src="images/front.png" alt="front side of the watch" class="w-20 h-20 object-cover rounded cursor-pointer border-2 border-white hover:opacity-70 transition"/>
+                    <img src="images/side.png" alt="side of the watch" class="w-20 h-20 object-cover rounded cursor-pointer border-2 border-white hover:opacity-70 transition"/>
+                    <img src="images/back.png" alt="back side of the watch"class="w-20 h-20 object-cover rounded cursor-pointer border-2 border-white hover:opacity-70 transition"/>
                 </div>
 
             </div>
