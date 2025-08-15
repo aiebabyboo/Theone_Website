@@ -1,12 +1,13 @@
+<!--i have tried to stick to styling more structured and visually appealing by using mostly Tailwind CSS classes for spacing, alignment, and background colors
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Théone - Luxury Watches</title>
-    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="/css/global.css">
-    <!-- TailwindCSS from CDN -->
+    <!-- TailwindCSS-->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <!-- Gradient background from white to gray, min height full screen -->
@@ -14,30 +15,34 @@
 
     <!-- Narbar -->
     <header class="main-header">
-
-        <!-- Navigation header -->
-        <div class="header-container">
-
-            <!-- Logo -->
-            <div class="logo" href="home.html">THÉONE</div>
-
-             <!-- Navigation links -->
-            <nav class="main-nav">
-                <a href="index.html">Home</a>
-                <a href="product-detail.html">Watches</a>
-                <a href="product.html">Collection</a>
-            </nav>
-
-            <!-- Currency & language switcher -->
-            <div class="value-and-language-switch">
-                <button>EUR</button>
-                <button>ENG</button>
-            </div>
+    <div class="header-container">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="home.html">THÉONE</a>
         </div>
-    </header>
+
+        <!-- Hamburger button -->
+        <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+
+        <!-- Navigation links -->
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="product-detail.html">Watches</a>
+            <a href="product.html">Collection</a>
+        </nav>
+
+        <!-- Currency & language switcher -->
+        <div class="value-and-language-switch">
+            <button>EUR</button>
+            <button>ENG</button>
+        </div>
+    </div>
+</header>
+    <!--ADDING BACKGROUND IMAGE-->
    <div class="relative">
     <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1610897534349-7759782118b9?fm=jpg&q=60&w=2400&ixlib=rb-4.1.0'); background-attachment: fixed;"></div>
     <div class="absolute inset-0 bg-black/50"></div>
+    <!-- TITLE OF THE PAGE AND LITTLE SMALL DETAILS SO IT LOOKS GOOD-->
     <section class="relative mx-auto max-w-7xl px-6 md:px-16 pt-10 pb-4">
       <p class="tracking-widest uppercase text-xs md:text-sm font-extrabold mb-2 text-white/70">Curated Collection</p>
       <h1 class="text-3xl md:text-5xl font-light tracking-wide mb-2">Watches</h1>
@@ -46,14 +51,17 @@
 
     <!-- Filter -->
     <section class="relative mx-auto max-w-7xl px-6 md:px-16 py-4 flex flex-wrap items-center gap-3">
+      <!-- SOME EASY TO REACH OPTIONS FOR THE USER-->
       <button class="px-3 py-1.5 rounded-full border border-white/15 bg-white/10 text-sm">All</button>
       <button class="px-3 py-1.5 rounded-full border border-white/15 bg-white/5 hover:bg-white/10 text-sm">Automatic</button>
       <button class="px-3 py-1.5 rounded-full border border-white/15 bg-white/5 hover:bg-white/10 text-sm">Dress</button>
       <button class="px-3 py-1.5 rounded-full border border-white/15 bg-white/5 hover:bg-white/10 text-sm">Field</button>
       <button class="px-3 py-1.5 rounded-full border border-white/15 bg-white/5 hover:bg-white/10 text-sm">Diver</button>
       <div class="ml-auto"></div>
+       <!--trying the option and label tag to make filter-->
       <label class="text-sm text-white/80 bg-black">Sort
         <select class="ml-2 rounded-lg border border-white/15 bg-black px-2 py-1">
+         
           <option>Featured</option>
           <option>Price: Low to High</option>
           <option>Price: High to Low</option>
@@ -66,11 +74,14 @@
     <main class="relative mx-auto max-w-7xl px-6 md:px-16 pb-20">
       
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- card 1 -->
             <section class="group rounded-2xl border border-white/20 bg-black/55 backdrop-blur shadow-xl overflow-hidden transition-transform duration-300 hover:-translate-y-1 hover:shadow-2xl">
-          <figure class="relative aspect-[4/3] grid place-items-center bg-black">
+          <!-- useing figure tag so that it doesnt influence the layout and its surrunding and could contain image  -->
+              <figure class="relative aspect-[4/3] grid place-items-center bg-black">
             <span class="absolute left-3 top-3 inline-block rounded-full bg-yellow-500 text-black text-[11px] font-extrabold px-3 py-1 shadow">New</span>
             <img src="images/front.png" alt="watch 1" class="w-4/5 drop-shadow-2xl transition-transform duration-500 group-hover:scale-105" width="800" height="600" />
           </figure>
+          <!-- card content and details including title, description, and price and the starts -->
           <div class="p-4">
             <h2 class="font-extrabold tracking-wide text-lg">Atlas Diver 200 · 41mm</h2>
             <p class="text-white/75 text-sm mt-1">Automatic movement, sapphire crystal, 200 m water resistance.</p>
@@ -81,6 +92,7 @@
               </div>
               <div class="text-base" aria-label="Rated 4.3 out of 5">★★★★☆</div>
             </div>
+            <!--made a list of the features of the watch which looks like the list on the top of the page so it shears some theme with the page--> 
             <ul class="mt-2 flex flex-wrap gap-2 text-xs text-white/80">
               <li class="px-2 py-1 rounded-full border border-white/20">Auto</li>
               <li class="px-2 py-1 rounded-full border border-white/20">41 mm</li>
@@ -91,6 +103,7 @@
               <a href="product-detail.html" class="flex-1 text-center rounded-xl border border-white/15 bg-white/10 px-3 py-2 hover:bg-white/15">Details</a>
               <a href="product-detail.html" class="flex-1 text-center rounded-xl border border-emerald-900/30 bg-emerald-800 px-3 py-2 font-semibold hover:bg-emerald-900">Add to cart</a>
             </div>
+            <!-- this is a quick look section that provides more details about the product and for this i have used summary for the drop box menu name-->
             <details class="mt-3 border-t border-white/10 pt-2">
               <summary class="cursor-pointer text-white/80 text-sm">Quick look</summary>
               <ul class="mt-2 ml-4 list-disc text-white/75 text-sm">
@@ -106,7 +119,7 @@
         <section class="group rounded-2xl border border-white/20 bg-black/55 backdrop-blur shadow-xl overflow-hidden transition-transform duration-300 hover:-translate-y-1 hover:shadow-2xl">
           <figure class="relative aspect-[4/3] grid place-items-center bg-black">
             <span class="absolute left-3 top-3 inline-block rounded-full bg-yellow-500 text-black text-[11px] font-extrabold px-3 py-1 shadow">New</span>
-            <img src="images/front.png" alt="watch 1" class="w-4/5 drop-shadow-2xl transition-transform duration-500 group-hover:scale-105" width="800" height="600" />
+            <img src="images/Hero.image.png" alt="watch 2" class="w-4/5 drop-shadow-2xl transition-transform duration-500 group-hover:scale-105" width="800" height="600" />
           </figure>
           <div class="p-4">
             <h2 class="font-extrabold tracking-wide text-lg">Atlas Diver 200 · 41mm</h2>
@@ -437,6 +450,7 @@
         </section>
 
     </main>
+    <!--footer-->
     <footer class="main-footer">
         <div class="footer-container">
             
@@ -461,4 +475,13 @@
         </div>
     </footer>
 </body>
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mainNav = document.querySelector('.main-nav');
+
+    menuToggle.addEventListener('click', () => {
+        mainNav.classList.toggle('show');
+    });
+</script>
 </html>
+
