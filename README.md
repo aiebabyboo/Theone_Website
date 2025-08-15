@@ -25,3 +25,4 @@ The website showcases the brand's story, product listings, and detailed product 
 https://aiebabyboo.github.io/Theone_Website/
 ## Repository: 
 team-project
+https://github.com/aiebabyboo/Theone_Website.git
