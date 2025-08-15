@@ -14,7 +14,7 @@ The website showcases the brand's story, product listings, and detailed product 
 ## Team Members: 
 - Le Thu Huyen Pham (Vivi) - Work in index.html and nav: header & footer (index).
 - Duc Minh Vu (Jay) - Work in product-detail.html and global.css (for nav: header & footer).
-- Vaibhav kapoor (Vabz) - Work in product.html 
+- Vaibhav kapoor (Vabz) - Work in product.html and made the nav bar and the header resposive.
 
 ## Pages:
 - 'index.html': Home Page
