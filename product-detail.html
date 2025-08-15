@@ -14,10 +14,11 @@
     <header class="main-header">
         <!-- Navigation header -->
         <div class="header-container">
+            <div class="logo" href="home.html">THÉONE</div>
 
-            <!-- Nav logo -->
-            <div class="logo"><a href="index.html">THÉONE</a></div>
-            <!-- Nav links -->
+            <!-- Hamburger button -->
+            <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+
             <nav class="main-nav">
                 <a href="index.html">Home</a>
                 <a href="product-detail.html">Watches</a>
@@ -32,28 +33,50 @@
     </header>
 
     <main class="px-8 md:px-20 py-16 bg-black text-white">
+        <!-- px-8: horizontal padding on small screens -->
+        <!-- md:px-20 horizontal padding increases on medium screens -->
+        <!-- py-16: vertical padding top and bottom -->
+
         <!-- Product detail section -->
         <section class="flex flex-col lg:flex-row gap-12 items-start">
+            <!-- flex: turns section into flexbox -->
+            <!-- flex-col: stack items vertically on small screen -->
+            <!-- lg:flex-row: change to row layout on large screen -->
+            <!-- gap-12: space between image and product info -->
+            <!-- items-start: align items to top -->
 
             <!-- Image slider -->
             <div class="w-full lg:w-1/2">
-
+                <!-- w-full: take full width on small screen -->
+                <!-- lg:w-1/2: take half width on large screen -->
                 <div class="relative w-full overflow-hidden rounded-lg shadow-lg">
+                    <!-- relative: for positioning child elements absolutely if needed -->
+                    <!-- overflow-hidden: hides overflow content -->
+                    <!-- shadow-lg: applies large box shadow. -->
                     <div class="flex transition-transform duration-500 ease-in-out" style="transform: translateX(0);">
+                        <!-- flex: flex container for slider -->
+                        <!-- transition-transform: animate transform property -->
+                        <!-- duration-500: animation lasts 500ms -->
+                        <!-- ease-in-out: easing function for smooth animation -->
                         <img src="images/front.png" alt="front side of the watch" class="w-full h-96 object-cover">
                     </div>
                 </div>
 
                 <div class="flex mt-4 gap-4">
+                    <!-- flex: make thumbnails line up horizontally -->
+                    <!-- mt-4: margin-top -->
+                    <!-- gap-4: spacing between thumbnails -->
                     <img src="images/front.png" alt="front side of the watch" class="w-20 h-20 object-cover rounded cursor-pointer border-2 border-white hover:opacity-70 transition"/>
                     <img src="images/side.png" alt="side of the watch" class="w-20 h-20 object-cover rounded cursor-pointer border-2 border-white hover:opacity-70 transition"/>
                     <img src="images/back.png" alt="back side of the watch"class="w-20 h-20 object-cover rounded cursor-pointer border-2 border-white hover:opacity-70 transition"/>
+                    <!-- cursor-pointer: makes the images clickable (appear hand when move mouse to the object) -->
                 </div>
 
             </div>
 
             <!-- Product Info -->
             <div class="w-full lg:w-1/2 space-y-6">
+                <!-- space-y-6: vertical spacing between objects -->
                 <h1 class="text-3xl md:text-4xl font-bold tracking-wide uppercase">Noir Edition</h1>
                 <p class="text-xl font-semibold text-gray-300">18,900 €</p>
                 <p class="text-gray-400 leading-relaxed">Noir Edition is a tribute to timeless design, infused with modern-day elegance. Crafted with a deep matte black finish, Swiss automatic movement, and sapphire crystal glass, it embodies sophistication and subtle power — a watch for those who lead in silence.</p>
