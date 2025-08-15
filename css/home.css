@@ -1,0 +1,8 @@
+@media (max-width: 640px) {
+   .main-header .header-container { 
+    padding-left: 1rem; padding-right: 1rem; 
+    }
+   .custom-h1 { 
+    font-size: 1.5rem; 
+    }
+}
