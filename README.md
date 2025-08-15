@@ -1,4 +1,7 @@
 # group_project_term1
+HEAD
+
+
 made by Vivi, Jay, Vabz, test
 test 2
 
@@ -21,3 +24,4 @@ The website showcases the brand's story, product listings, and detailed product 
 ## Live Website: 
 
 ## Repository: 
+team-project
