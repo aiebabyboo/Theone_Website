@@ -17,7 +17,7 @@ The website showcases the brand's story, product listings, and detailed product 
 - Vabz - Work in product.html. 
 
 ## Pages:
-- 'home.html': Home Page
+- 'index.html': Home Page
 - 'product.html': Product Listing Page
 - 'product-detail.html': Product Detail Page
 
